@@ -5,6 +5,8 @@ import "./css/signup.css"; // Import the CSS file
 
 export default function Signup() {
   const [email, setEmail] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [surname, setSurname] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State for error message
@@ -25,8 +27,7 @@ export default function Signup() {
       return;
     }
 
-    console.log("Email:", email);
-    console.log("Password:", password);
+    // 
     // Additional logic for signup (API call, etc.)
   };
 
@@ -41,6 +42,28 @@ export default function Signup() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+            className="form-input"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="firstname">First name:</label>
+          <input
+            type="firstname"
+            id="firstname"
+            value={firstname}
+            onChange={(e) => setFirstname(e.target.value)}
+            required
+            className="form-input"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="surname">Surname:</label>
+          <input
+            type="surname"
+            id="surname"
+            value={surname}
+            onChange={(e) => setSurname(e.target.value)}
             required
             className="form-input"
           />

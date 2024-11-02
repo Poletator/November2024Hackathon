@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    border:0;
+}
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end; 
+  }
+  
+  .navList li {
+    color: white;
+  }
+  
+  .navList a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navList a:hover {
+    text-decoration: underline;
+  }
+  
+  .mainContent {
+    padding: 2rem;
+  }
+  
+  .infoSection {
+    margin: 2rem 2rem auto 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .infoField {
+    margin-bottom: 1rem;
+  }  
